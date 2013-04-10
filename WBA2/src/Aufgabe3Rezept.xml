@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!-- complex, simpel ? -->
+<!-- 1 oder 2?-->
+<rezept id="0">
+<titel>Lenchen’s Schokoladenkuchen</titel>
+<bild url="http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/8082-960x720-lenchen_s_schokoladenkuchen.jpg"/>
+<buttons>
+    <button name="Drucken"/>
+    <button name="Speichern"/>
+    <button name=">Speichern Unter"/>
+    <button name="Empfehlen"/>
+    <button name="Fotos hochladen"/>
+    </buttons>
+
+    
+    <zutaten> <!-- complex da es andere elemente enthält -->
+        <header>Zutaten</header>
+      <!--1 --> <!--<menge>200</menge> <einheit>g</einheit> <zutat>butter</zutat>  -->
+      <!--2 -->   <zutat menge="200" einheit="g" name="Butter"/>
+        <zutat menge="200" einheit="g" name="Zucker"/>
+        <zutat menge="200" einheit="g" name="Schokolade,Blockschokolade"/>
+        <zutat menge="120" einheit="g" name="Mehl"/>
+        <zutat menge="0.5" einheit="TL" name="Backpulver"/>
+        <zutat menge="1" einheit="Pkt." name="Vanillezucker"/>
+        <zutat menge="4"  name="Eier"/>
+        
+    </zutaten>
+    <portionen anzahl="16" name="Portionen"/>
+    <button name="Umrechnen" />
+    <zubereitung>
+    <header>Zubereitung</header>
+     <text>Arbeitszeit: ca. 1 Std.	 / Schwierigkeitsgrad: normal	 / Brennwert p. P.: 295 kcal
+
+Butter und Schokolade im Wasserbad schmelzen. Eier trennen. Eiweiß steif schlagen. Eigelbe, Zucker und Vanillezucker verrühren. Geschmolzene Butter-Schokomasse hinzufügen und mischen. Mehl mit dem Backpulver in die Masse sieben und zum Schluss die steifen Eiweiße vorsichtig unterheben. In eine gut gefettete Form geben. 
+Bei 180°Grad 40 – 50 Minuten backen.</text>   
+    </zubereitung>
+
+</rezept>

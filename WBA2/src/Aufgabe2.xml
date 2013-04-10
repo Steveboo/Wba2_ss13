@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<formular>
+	<gruppenleiter>
+		<vorname>Max</vorname>
+		<nachname>Mustermann</nachname>
+		<e-mail>Mustermann@beispiel.de</e-mail>
+		<geburtsdatum>01.01.1900</geburtsdatum>
+		<erfahrung>Profi</erfahrung>
+		<schlagzeug>vorhanden</schlagzeug>
+		<anmerkung>Beispiel Anmerkung</anmerkung>
+	</gruppenleiter>
+    <person_1>
+        <vorname>Jon</vorname>
+        <nachname>Snow</nachname>
+        <e-mail>snow@beispiel.de</e-mail>
+        <geburtsdatum>01.01.1900</geburtsdatum>
+        <erfahrung>Amateur</erfahrung>
+        <schlagzeug>nicht vorhanden</schlagzeug>
+    </person_1>
+</formular>

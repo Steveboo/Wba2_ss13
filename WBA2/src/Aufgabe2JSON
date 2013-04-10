@@ -1,0 +1,23 @@
+{"Formular":[
+    {"Gruppenleiter":
+ {"Vorname":"Max",
+ "Nachname":"Mustermann",
+ "E-Mail":"Mustermann@beispiel.de",
+ "Geburtsdatum":"01.01.1900",
+ "Erfahrung":"Profi",
+ "Schlagzeug":"vorhanden",
+ "Anmerkung":"Beispiel Anmerkung"
+ }
+    }
+    {"Person 1":
+ {"Vorname":"Jon",
+ "Nachname":"Snow",
+ "E-Mail":"snow@beispiel.de",
+ "Geburtsdatum":"01.01.1900",
+ "Erfahrung":"Amateur",
+ "Schlagzeug":"nicht vorhanden"
+ }
+    }
+ ]
+}
+ 
