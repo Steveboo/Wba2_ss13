@@ -1,40 +1,41 @@
-<?xml version="1.0"?>
-<rezept id="0">
-	<titel>Lenchen’s Schokoladenkuchen</titel>
-	<bild url="http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/8082-960x720-lenchen_s_schokoladenkuchen.jpg"/>
-
-    
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rezept>
+    <titel>Lenchen’s Schokoladenkuchen</titel>
+    <bild url="http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/8082-960x720-lenchen_s_schokoladenkuchen.jpg"></bild>
     <zutaten>
-    
-    	<zutat menge="200" einheit="g" name="Butter"/>
-        <zutat menge="200" einheit="g" name="Zucker"/>	
-        <zutat menge="200" einheit="g" name="Schokolade,Blockschokolade"/>
-        <zutat menge="120" einheit="g" name="Mehl"/>
-        <zutat menge="0.5" einheit="TL" name="Backpulver"/>
-        <zutat menge="1" einheit="Pkt." name="Vanillezucker"/>
-        <zutat menge="4"  name="Eier"/>
-        
+        <zutat name="Butter" menge="200.0" einheit="g">
+        </zutat>
+        <zutat name="Zucker" menge="200.0" einheit="g">
+        </zutat>
+        <zutat name="Schokolade,Blockschokolade" menge="200.0" einheit="g">
+        </zutat>
+        <zutat name="Mehl" menge="120.0" einheit="g">
+        </zutat>
+        <zutat name="Backpulver" menge="0.5" einheit="TL">
+        </zutat>
+        <zutat name="Vanillezucker" menge="1.0" einheit="Pkt.">
+        </zutat>
+        <zutat name="Eier" menge="4.0">
+        </zutat>
     </zutaten>
-    <portionen anzahl="16" />
-  
+    <portionen anzahl="16.0">
+    </portionen>
     <zubereitung>
-    <arbeitszeit>: ca. 1 Std.</arbeitszeit>
-    <schwierigkeitsgrad>normal</schwierigkeitsgrad>
-    <brennwert>295 kcal</brennwert> 
-<beschreibung>
+        <arbeitszeit>: ca. 1 Std.</arbeitszeit>
+        <schwierigkeitsgrad>normal</schwierigkeitsgrad>
+        <brennwert>295 kcal</brennwert>
+        <beschreibung>
 Butter und Schokolade im Wasserbad schmelzen. Eier trennen.
  Eiweiß steif schlagen. Eigelbe, Zucker und Vanillezucker verrühren.
   Geschmolzene Butter-Schokomasse hinzufügen und mischen.
    Mehl mit dem Backpulver in die Masse sieben und zum Schluss die steifen Eiweiße 
    vorsichtig unterheben. In eine gut gefettete Form geben. 
-Bei 180°Grad 40 – 50 Minuten backen.</beschreibung>   
+Bei 180°Grad 40 – 50 Minuten backen.</beschreibung>
     </zubereitung>
     <kommentare>
-    
-    <kommentar id="0" autor="max" datum="01.01.1900" zeit="13:37" >
+        <kommentar id="0" autor="max">
      Hallo Lecker!
     </kommentar>
-     
+        <kommentar id="2" autor="max">neuer kommentar</kommentar>
     </kommentare>
-
 </rezept>

@@ -16,7 +16,7 @@
     <xs:element name="zutaten">
      <xs:complexType>
       <xs:sequence>
-       <xs:element name="zutat" maxOccurs="unbounded" minOccurs="0">
+       <xs:element name="zutat" maxOccurs="unbounded" minOccurs="1">
         <xs:complexType>
           <xs:attribute name="menge" type="xs:float" use="required"/>
           <xs:attribute name="einheit" type="xs:string" use="optional"/>
@@ -47,7 +47,7 @@
     <xs:element name="kommentare">
      <xs:complexType>
       <xs:sequence>
-       <xs:element name="kommentar">
+       <xs:element name="kommentar" maxOccurs="unbounded" minOccurs="0">
         <xs:complexType>
          <xs:simpleContent>
           <xs:extension base="xs:string">
