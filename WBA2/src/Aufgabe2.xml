@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
-<formular>
+<anmeldung>
 	<gruppenleiter>
 		<vorname>Max</vorname>
 		<nachname>Mustermann</nachname>
-		<e-mail>Mustermann@beispiel.de</e-mail>
+		<email>Mustermann@beispiel.de</email>
 		<geburtsdatum>01.01.1900</geburtsdatum>
 		<erfahrung>Profi</erfahrung>
 		<schlagzeug>vorhanden</schlagzeug>
 		<anmerkung>Beispiel Anmerkung</anmerkung>
 	</gruppenleiter>
-    <person_1>
+    <person ><!-- können mehrere sein ÄNDERN -->
         <vorname>Jon</vorname>
         <nachname>Snow</nachname>
-        <e-mail>snow@beispiel.de</e-mail>
+        <email>snow@beispiel.de</email>
         <geburtsdatum>01.01.1900</geburtsdatum>
         <erfahrung>Amateur</erfahrung>
         <schlagzeug>nicht vorhanden</schlagzeug>
-    </person_1>
-</formular>
+    </person>
+</anmeldung>

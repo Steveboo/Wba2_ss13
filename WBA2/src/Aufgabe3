@@ -16,7 +16,7 @@ Für welche Daten ist die Abbildung in Attributen sinnvoller?
 
 Welche Datentypen müssen für die Elemente definiert werden?
 - bei Zutaten anzahl in Integer
-- einheit in String mit g, TL, Pkt (oder nichts wie bei Eier)
+- einheit in String mit g, TL, Pkt ... (oder nichts wie bei Eier)
 - portionen in Ineger
 
 Welche Restriktionen müssen definiert werden?
