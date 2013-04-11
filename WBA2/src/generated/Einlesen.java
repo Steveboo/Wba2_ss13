@@ -7,6 +7,7 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.GregorianCalendar;
 import java.util.Locale;
+import java.util.Scanner;
 import java.util.TimeZone;
 
 import javax.xml.bind.JAXBContext;
@@ -25,19 +26,48 @@ public class Einlesen {
 		Unmarshaller um=context.createUnmarshaller();
 		Rezept r=(Rezept) um.unmarshal(new FileInputStream("src/Aufgabe3Rezept.xml"));
 		
-		System.out.println(r.getZutaten().getZutat().get(1).getMenge());
-		System.out.println(r.getZubereitung().getArbeitszeit());
-		System.out.println(r.getPortionen().getAnzahl());
-		System.out.println(r.getKommentare().getKommentar().get(0).getValue());
+		Scanner in= new Scanner(System.in);
+		
+		System.out.println("Zum ausgeben 1 drücken, neuer Kommentar mit 2");
+		int a=in.nextInt();
+		String nameAutor="";
+		String eingegebenerKommentar="";
+		if (a==1)
+				{
+			
+			System.out.println(r.getZutaten().getZutat().get(1).getMenge());
+			System.out.println(r.getZubereitung().getArbeitszeit());
+			System.out.println(r.getPortionen().getAnzahl());
+			
+			for(Kommentar k:r.getKommentare().getKommentar()){
+				System.out.println(k.getAutor());
+				System.out.println(k.getId());
+				System.out.println(k.getDatum());
+				System.out.println(k.getZeit());
+				System.out.println(k.getValue());
+					}
+			}
+		else if (a==2){
+			System.out.println("geben Sie ihren Namen ein:");
+			nameAutor=in.next();
+			System.out.println("geben Sie ihren den Kommentar ein:");
+			eingegebenerKommentar=in.next();
+		}
+		else {
+			System.out.println("Fehler!");
+			return;
+		}
+		
 		Kommentar k = new Kommentar();
-		k.setAutor("max");
+		
+		k.setAutor(nameAutor);
 		k.setDatum(r.getKommentare().getKommentar().get(0).getDatum());
-		k.setId("2");
+		k.setId((new Integer((int)(Math.random()*42*42))).toString());
 		k.setZeit(r.getKommentare().getKommentar().get(0).getZeit());
-		k.setValue("neuer kommentar");
+		k.setValue(eingegebenerKommentar);
 		
 		r.getKommentare().getKommentar().add(k);
-		System.out.println(r.getKommentare().getKommentar().get(1).getValue());
+		
 		
 		Marshaller ma=context.createMarshaller();
 		ma.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
