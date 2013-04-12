@@ -34,7 +34,7 @@ public class Einlesen {
 		int a=in.nextInt();
 		String nameAutor="";
 		String eingegebenerKommentar="";
-		if (a==1)
+		if (a==1)  // Ausgabe des gesamten Datensatzes
 				{
 			for (Zutat z:r.getZutaten().getZutat()){
 				
@@ -55,22 +55,22 @@ public class Einlesen {
 				System.out.println(k.getValue());
 					}
 			}
-		else if (a==2){
+		else if (a==2){                 // Neuer Kommentar
 			System.out.println("geben Sie ihren Namen ein:");
 			nameAutor=in.next();
 			System.out.println("geben Sie ihren den Kommentar ein:");
 			eingegebenerKommentar=in.next();
 		}
 		else {
-			System.out.println("Fehler!");
+			System.out.println("Fehler!");   //fehlerausgabe bei falscher eingabe
 			return;
 		}
 		Date now = new Date();
 		GregorianCalendar c = new GregorianCalendar();
-		c.setTime(now);
-		XMLGregorianCalendar date2 = DatatypeFactory.newInstance().newXMLGregorianCalendar(c);
+		c.setTime(now);                                        // aktuelle Zeit und Datum als XML Calendar
+		XMLGregorianCalendar date2 = DatatypeFactory.newInstance().newXMLGregorianCalendar(c); 
 		
-		for(Kommentar k:r.getKommentare().getKommentar() )
+		for(Kommentar k:r.getKommentare().getKommentar() ) //größte Id herausfinden
 		{  
 		String stringZahl = k.getId();
 	    int intZahl = Integer.parseInt(stringZahl);
@@ -80,9 +80,9 @@ public class Einlesen {
 		Kommentar k = new Kommentar();
 		//Kommentar erstellen
 		k.setAutor(nameAutor);
-		k.setDatum(date2);
-		String altString = String.valueOf(alt+1);
-		k.setId(altString);
+		k.setDatum(date2); 
+		String altString = String.valueOf(alt+1);//größte id +1
+		k.setId(altString); // fortlaufende ID
 		//k.setId((new Integer((int)(Math.random()*42*42))).toString()); // Random ID
 		k.setZeit(date2); 
 		k.setValue(eingegebenerKommentar);
@@ -91,8 +91,8 @@ public class Einlesen {
 		
 		
 		Marshaller ma=context.createMarshaller();
-		ma.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-		ma.marshal(r, new FileOutputStream("src/Aufgabe3Rezept.xml"));
+		ma.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true); //Erstellter Kommentar Formatiert eintragen
+		ma.marshal(r, new FileOutputStream("src/Aufgabe3Rezept.xml")); 
 		
 	}
 	

@@ -9,7 +9,7 @@
 		<schlagzeug>vorhanden</schlagzeug>
 		<anmerkung>Beispiel Anmerkung</anmerkung>
 	</gruppenleiter>
-    <person ><!-- können mehrere sein ÄNDERN -->
+    <person >
         <vorname>Jon</vorname>
         <nachname>Snow</nachname>
         <email>snow@beispiel.de</email>

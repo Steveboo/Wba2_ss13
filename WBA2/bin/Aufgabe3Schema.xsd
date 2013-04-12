@@ -29,9 +29,7 @@
      </xs:element>
     <xs:element name="portionen">
      <xs:complexType>
-      <!--  <xs:extension base="xs:string"> -->
        <xs:attribute name="anzahl" type="xs:float" use="required"/>
-     <!-- </xs:extension> -->
     </xs:complexType>
    </xs:element>
     <xs:element name="zubereitung">
