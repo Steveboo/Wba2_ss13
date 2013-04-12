@@ -57,9 +57,9 @@ public class Einlesen {
 			}
 		else if (a==2){                 // Neuer Kommentar
 			System.out.println("geben Sie ihren Namen ein:");
-			nameAutor=in.next();
+			nameAutor=in.next()+in.nextLine();
 			System.out.println("geben Sie ihren den Kommentar ein:");
-			eingegebenerKommentar=in.next();
+			eingegebenerKommentar=in.next()+in.nextLine();
 		}
 		else {
 			System.out.println("Fehler!");   //fehlerausgabe bei falscher eingabe
