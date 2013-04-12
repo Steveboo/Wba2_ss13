@@ -1,5 +1,6 @@
 package generated;
 import generated.Rezept.Kommentare.Kommentar;
+import generated.Rezept.Zutaten.Zutat;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -34,11 +35,17 @@ public class Einlesen {
 		String eingegebenerKommentar="";
 		if (a==1)
 				{
+			for (Zutat z:r.getZutaten().getZutat()){
+				
+				System.out.println(z.getMenge()+" "+z.getEinheit()+" "+z.getName());
+			}
 			
-			System.out.println(r.getZutaten().getZutat().get(1).getMenge());
-			System.out.println(r.getZubereitung().getArbeitszeit());
-			System.out.println(r.getPortionen().getAnzahl());
-			
+			System.out.println("für "+r.getPortionen().getAnzahl()+" Portionen");
+			System.out.println("Arbeitszeit"+r.getZubereitung().getArbeitszeit());
+			System.out.println("Schwierigkeitsgrad "+r.getZubereitung().getSchwierigkeitsgrad());
+			System.out.println("Brennwert: "+r.getZubereitung().getBrennwert());
+			System.out.println(r.getZubereitung().getBeschreibung());
+
 			for(Kommentar k:r.getKommentare().getKommentar()){
 				System.out.println(k.getAutor());
 				System.out.println(k.getId());
