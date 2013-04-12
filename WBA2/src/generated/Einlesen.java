@@ -37,8 +37,11 @@ public class Einlesen {
 		if (a==1)  // Ausgabe des gesamten Datensatzes
 				{
 			for (Zutat z:r.getZutaten().getZutat()){
-				
-				System.out.println(z.getMenge()+" "+z.getEinheit()+" "+z.getName());
+				if(z.getEinheit()==null)
+				System.out.println(z.getMenge()+" "+z.getName());
+				else{
+					System.out.println(z.getMenge()+" "+z.getEinheit()+" "+z.getName());
+				}
 			}
 			
 			System.out.println("für "+r.getPortionen().getAnzahl()+" Portionen");
@@ -51,7 +54,7 @@ public class Einlesen {
 				System.out.println(k.getAutor());
 				System.out.println(k.getId());
 				System.out.println(k.getDatum());
-				System.out.println(k.getZeit());
+				//System.out.println(k.getZeit()); XML Calendar format enthlält zeit und datum
 				System.out.println(k.getValue());
 					}
 			}

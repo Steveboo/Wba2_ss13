@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <anmeldung>
-	<gruppenleiter>
+ <gruppe>
+	<person gruppenleiter="1">
 		<vorname>Max</vorname>
 		<nachname>Mustermann</nachname>
 		<email>Mustermann@beispiel.de</email>
 		<geburtsdatum>01.01.1900</geburtsdatum>
 		<erfahrung>Profi</erfahrung>
 		<schlagzeug>vorhanden</schlagzeug>
-		<anmerkung>Beispiel Anmerkung</anmerkung>
-	</gruppenleiter>
-    <person >
+	</person>
+    <person gruppenleuter="0" >
         <vorname>Jon</vorname>
         <nachname>Snow</nachname>
         <email>snow@beispiel.de</email>
@@ -17,4 +17,6 @@
         <erfahrung>Amateur</erfahrung>
         <schlagzeug>nicht vorhanden</schlagzeug>
     </person>
+    <anmerkung>Beispiel Anmerkung</anmerkung>
+  </gruppe>
 </anmeldung>

@@ -39,5 +39,7 @@ Bei 180°Grad 40 – 50 Minuten backen.</beschreibung>
         <kommentar zeit="2013-04-12T14:51:46.790+02:00" id="3" datum="2013-04-12T14:51:46.790+02:00" autor=""></kommentar>
         <kommentar zeit="2013-04-12T14:53:29.100+02:00" id="4" datum="2013-04-12T14:53:29.100+02:00" autor="max">mustermann</kommentar>
         <kommentar zeit="2013-04-12T14:54:05.206+02:00" id="5" datum="2013-04-12T14:54:05.206+02:00" autor="max mustermann">toller kommentar</kommentar>
+        <kommentar zeit="2013-04-12T16:16:43.330+02:00" id="6" datum="2013-04-12T16:16:43.330+02:00" autor="max mustermann">kommentar mit leertaste</kommentar>
+        <kommentar zeit="2013-04-12T18:09:33.140+02:00" id="7" datum="2013-04-12T18:09:33.140+02:00" autor=""></kommentar>
     </kommentare>
 </rezept>
