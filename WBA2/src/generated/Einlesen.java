@@ -10,10 +10,11 @@ import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.Scanner;
 import java.util.TimeZone;
-
+import java.util.Date;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.Duration;
 import javax.xml.datatype.XMLGregorianCalendar;
 import javax.xml.namespace.QName;
@@ -26,7 +27,7 @@ public class Einlesen {
 		// Java objekte aus XML erstellen
 		Unmarshaller um=context.createUnmarshaller();
 		Rezept r=(Rezept) um.unmarshal(new FileInputStream("src/Aufgabe3Rezept.xml"));
-		
+		int alt=0;
 		Scanner in= new Scanner(System.in);
 		
 		System.out.println("Zum ausgeben 1 drücken, neuer Kommentar mit 2");
@@ -64,13 +65,26 @@ public class Einlesen {
 			System.out.println("Fehler!");
 			return;
 		}
+		Date now = new Date();
+		GregorianCalendar c = new GregorianCalendar();
+		c.setTime(now);
+		XMLGregorianCalendar date2 = DatatypeFactory.newInstance().newXMLGregorianCalendar(c);
 		
+		for(Kommentar k:r.getKommentare().getKommentar() )
+		{  
+		String stringZahl = k.getId();
+	    int intZahl = Integer.parseInt(stringZahl);
+		if(intZahl>alt)
+			alt=intZahl;
+	  }
 		Kommentar k = new Kommentar();
-		
+		//Kommentar erstellen
 		k.setAutor(nameAutor);
-		k.setDatum(r.getKommentare().getKommentar().get(0).getDatum());
-		k.setId((new Integer((int)(Math.random()*42*42))).toString());
-		k.setZeit(r.getKommentare().getKommentar().get(0).getZeit());
+		k.setDatum(date2);
+		String altString = String.valueOf(alt+1);
+		k.setId(altString);
+		//k.setId((new Integer((int)(Math.random()*42*42))).toString()); // Random ID
+		k.setZeit(date2); 
 		k.setValue(eingegebenerKommentar);
 		
 		r.getKommentare().getKommentar().add(k);
@@ -81,5 +95,6 @@ public class Einlesen {
 		ma.marshal(r, new FileOutputStream("src/Aufgabe3Rezept.xml"));
 		
 	}
+	
 
 }
